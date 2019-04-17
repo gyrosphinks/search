@@ -517,6 +517,26 @@ if (document.addEventListener) { // IE >= 9; other browsers
      window.event.returnValue = false;
   });
 }
+  // Credits: http://blog.vishalon.net/index.php/javascript-getting-and-setting-caret-position-in-textarea/
+function setCaretPosition(ctrl, pos) {
+  // Modern browsers
+  if (ctrl.setSelectionRange) {
+    ctrl.focus();
+    ctrl.setSelectionRange(pos, pos);
+  
+  // IE8 and below
+  } else if (ctrl.createTextRange) {
+    var range = ctrl.createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
+  }
+}
+
+// Set the cursor position of the "#test-input" element to the end when the page loads
+var input = document.getElementById('search-text');
+setCaretPosition(input, input.value.length);
     </script>
 <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
 </body>
