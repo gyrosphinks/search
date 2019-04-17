@@ -48,12 +48,13 @@ body {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-}
-input[type=text] {
+  background-image: url('searchicon.png');
   background-color: #10BA65;
   color: white;
-  -webkit-transition: width 1.4s ease-in-out;
-  transition: width 1.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text] {
 }
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
