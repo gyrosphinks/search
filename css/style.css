@@ -51,8 +51,8 @@ body {
   background-image: url('searchicon.png');
   background-color: #10BA65;
   color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-out-in;
+  transition: width 0.4s ease-out-in;
 }
 input[type=text] {
 }
