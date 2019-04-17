@@ -37,7 +37,7 @@ body {
 }
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #ff3300;
+  background-color: #ff9900;
   color: white;
 }
 /* Style the search box inside the navigation bar */
