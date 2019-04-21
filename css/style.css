@@ -58,9 +58,9 @@ input[type=text] {
 }
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-  text-align: center;
+  text-align: left;
   float: center;
-  width: 30%;
+  width: ;
 }
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
