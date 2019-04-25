@@ -1,113 +1,67 @@
 
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-
-    <title>Irom - PGS</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      background: rgb(14, 30, 37);
-      color: white;
-      overflow: hidden;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 22px;
-      line-height: 24px;
-    }
-
-    .main {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-    }
-
-    .card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 75%;
-      max-width: 364px;
-      padding: 24px;
-      background: white;
-      color: rgb(14, 30, 37);
-      border-radius: 8px;
-      box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
-    }
-
-    a {
-      margin: 0;
-      text-decoration: none;
-      font-weight: 600;
-      line-height: 24px;
-      color: #00ad9f;
-    }
-
-    a svg {
-      position: relative;
-      top: 2px;
-    }
-
-    a:hover,
-    a:focus {
-      text-decoration: underline;
-      color: #007A70;
-    }
-
-    a:hover svg path{
-      fill: #007A70;
-    }
-
-    p:last-of-type {
-      margin: 0;
-    }
-
-    </style>
-  </head>
-  <body>
-    <div class="main">
-      <div class="card">
-        <div class="header">
-          <h1>PGS will be back up soon!</h1>
-        </div>
-        <div class="body">
-          <p>Sorry, we are getting over server errors</p>
-          <p>
-            <a id="back-link" href="https://www.google.cf/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#00ad9f" d="M11.9998836,4.09370803 L8.55809517,7.43294953 C8.23531459,7.74611298 8.23531459,8.25388736 8.55809517,8.56693769 L12,11.9062921 L9.84187871,14 L4.24208544,8.56693751 C3.91930485,8.25388719 3.91930485,7.74611281 4.24208544,7.43294936 L9.84199531,2 L11.9998836,4.09370803 Z"/>
-              </svg>Use google search for now
-             </a> or     
-<script>
-function bye() {
-location.replace("https://google.com");
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel='stylesheet' href='https://irom.cf/css/style.css'>
+<style>
+      iframe {
+  border: none;
 }
-</script>
-<button onclick="bye()">Erase This From Your History</button>
-            or copy the folowing code to a bookmark and click the bookmark
-            <code>
-              javascript:location.replace("https://google.com");
-            </code>
-          </p>
-        </div>
-      </div>
-    </div>
-    <script>
-      (function() {
-        if (document.referrer && document.location.host && document.referrer.match(new RegExp("^https?://" + document.location.host))) {
-          document.getElementById("back-link").setAttribute("href", document.referrer);
-        }
-      })();
-    </script>
-    <script>document.onkeyup = function(e) {
+    </style>
+</head>
+<body translate="no">
+<title>Irom - PGS</title>
+<div class="topnav">
+<a class="active1" href="https://www.irom.cf">Home</a>
+<a class="active1" href="https://www.irom.cf/photos">Photos</a>
+<a class="active1" href="https://www.irom.cf/music">Music</a>
+<a class="active1" href="https://www.irom.cf/books">Books</a>
+<a class="active1" href="https://www.irom.cf/weather">Weather</a>
+<input onclick="window.location = 'https://www.irom.cf/search';" id="searchBox" type="text" placeholder="Search..."> <input placeholder="Enter a URL..." id="urlbox" type="text" onchange="preview(document.getElementById('urlbox').value);"></input>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'></link>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<button onclick='openTab(document.getElementById("urlbox").value);'><i class="fas fa-external-link-alt"></i></button>
+<br /><br />
+<span id="preview"><iframe></iframe></span>
+</body>
+<script id="rendered-js">
+      const openNewTab = true;
+const defaultURL = "irom.cf/pgs/info";
+
+$(".urlbox").keypress(function(e) {
+  var keycode = (e.keyCode ? e.keyCode : e.which);
+  if (keycode == '13') {
+    var typed = document.getElementById("urlbox").value;
+    openTab(typed);
+  }
+});
+
+function openTab(url) {
+  if (openNewTab) {
+    window.open("https://" + url.toString());
+  } else {
+    window.append("https://" + url.toString());
+  }
+}
+
+function preview(url) {
+  if (url.length > 0) {
+    document.getElementById("preview").innerHTML = "<iframe id='preview' src='https://" + url.toString() + "'></iframe>";
+  } else {
+    document.getElementById("preview").innerHTML = "<iframe id='preview' src='https://" + defaultURL + "'></iframe>";
+  }
+}
+
+preview("");
+
+
+
+document.onkeyup = function(e) {
   if (e.which == 77) {
     alert("M key was pressed");
   } else if (e.ctrlKey && e.which == 66) {
@@ -117,6 +71,11 @@ location.replace("https://google.com");
   } else if (e.ctrlKey && e.altKey && e.shiftKey && e.which == 85) {
     alert("Ctrl + Alt + Shift + U shortcut combination was pressed");
   }
-};</script>
-  </body>
+};
+function bye() {
+location.replace("https://google.com");
+}
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
 </html>
