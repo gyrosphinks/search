@@ -61,28 +61,10 @@ preview("");
 
 
 
-document.onkeyup = function(e) {
-  if (e.which == 77) {
-    alert("M key was pressed");
-  } else if (e.ctrlKey && e.which == 66) {
-location.replace("https://google.com");
-         } else if (e.ctrlKey && e.which == 23) {
-location.replace("https://google.com");
-  } else if (e.ctrlKey && e.altKey && e.which == 89) {
-    alert("Ctrl + Alt + Y shortcut combination was pressed");
-  } else if (e.ctrlKey && e.altKey && e.shiftKey && e.which == 85) {
-    alert("Ctrl + Alt + Shift + U shortcut combination was pressed");
-  }
-};
+
 function bye() {
 location.replace("https://google.com");
 }
-      $(window).keypress(function(event) {
-    if (event.which == 119 && event.ctrlKey){   
-    event.preventDefault();
-   location.replace("https://google.com");
-  }
-});
       $(window).keydown(function(event) {
   if(event.ctrlKey && event.keyCode == 84) { 
     console.log("Hey! Ctrl+T event captured!");
@@ -91,6 +73,11 @@ location.replace("https://google.com");
   }
   if(event.ctrlKey && event.keyCode == 83) { 
     console.log("Hey! Ctrl+S event captured!");
+        bye()
+    event.preventDefault(); 
+  }
+            if(event.ctrlKey && event.keyCode == 23) { 
+    console.log("Hey! Ctrl+W event captured!");
         bye()
     event.preventDefault(); 
   }
