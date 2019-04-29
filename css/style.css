@@ -45,6 +45,7 @@ body {
   overflow: hidden;
   background-color: #00AA55;
   position: fixed;
+  width: 100%;
 }
 /* Style the links inside the navigation bar */
 .midnav a {
