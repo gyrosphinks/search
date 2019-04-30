@@ -44,6 +44,7 @@ body {
 .midnav {
   overflow: hidden;
   position: fixed;
+  background-color: #00AA55;
   width: 100%;
 }
 /* Style the links inside the navigation bar */
@@ -62,8 +63,32 @@ body {
   color: black;
 }
 /* Style the "active" element to highlight the current page */
-.midnav a.active {
-  background-color: #ff9900;
+.midnav a.r {
+  background-color: red;
+  color: white;
+}
+.midnav a.o {
+  background-color: orange;
+  color: white;
+}
+.midnav a.y {
+  background-color: yellow;
+  color: white;
+}
+.midnav a.g {
+  background-color: green;
+  color: white;
+}
+.midnav a.b {
+  background-color: blue;
+  color: white;
+}
+.midnav a.i {
+  background-color: indigo;
+  color: white;
+}
+.midnav a.v {
+  background-color: violet;
   color: white;
 }
 /* Style the search box inside the navigation bar */
