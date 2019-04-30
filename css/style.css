@@ -49,7 +49,7 @@ body {
 }
 /* Style the links inside the navigation bar */
 .midnav a {
-  float: center;
+  float: left;
   display: block;
   color: black;
   text-align: center;
