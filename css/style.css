@@ -58,7 +58,31 @@ body {
   font-size: 17px;
 }
 /* Change the color of links on hover */
-.midnav a:hover {
+.midnav a.r:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.o:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.y:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.g:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.b:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.i:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.midnav a.v:hover {
   background-color: #10BA65;
   color: black;
 }
@@ -73,7 +97,7 @@ body {
 }
 .midnav a.y {
   background-color: yellow;
-  color: white;
+  color: black;
 }
 .midnav a.g {
   background-color: green;
