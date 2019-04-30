@@ -43,7 +43,6 @@ body {
 /* Add a black background color to the top navigation bar */
 .midnav {
   overflow: hidden;
-  background-color: #00AA55;
   position: fixed;
   width: 100%;
 }
