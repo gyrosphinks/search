@@ -59,31 +59,31 @@ body {
 }
 /* Change the color of links on hover */
 .midnav a.r:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.o:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.y:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.g:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.b:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.i:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 .midnav a.v:hover {
-  background-color: #10BA65;
+  background-color: #00AA55;
   color: black;
 }
 /* Style the "active" element to highlight the current page */
