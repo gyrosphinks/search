@@ -154,9 +154,7 @@
 <input type=button data-button=outline value=&lt; onclick=move('prev') ontouchstart=move('prev')>
       <script>
 var countDownDate = localStorage.getItem('startDate');
-if (countDownDate) {
-    countDownDate = new Date(countDownDate);
-} else {
+if {
     countDownDate = new Date();
     localStorage.setItem('startDate', countDownDate);
 }
@@ -179,7 +177,7 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 }, 1000);
 </script>
-      <p data-button=outline id="demo"></p>
+      <p data-button=outline id="demo" onclick="none()"></p>
 <input type=button data-button=outline value=&gt; onclick=move('next') ontouchstart=move('next')>
 
 </nav>
