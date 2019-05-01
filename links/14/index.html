@@ -154,9 +154,10 @@
 <input type=button data-button=outline value=&lt; onclick=move('prev') ontouchstart=move('prev')>
       <script>
 var countDownDate = localStorage.getItem('startDate');
-if {
-    countDownDate = new Date();
-    localStorage.setItem('startDate', countDownDate);
+if (countDownDate) {
+    countDownDate = new Date(countDownDate);
+} else {
+    countDownDate = new Date(countDownDate);
 }
 // Update the count down every 1 second
 var x = setInterval(function() {
