@@ -35,6 +35,13 @@ body {
   background-color: #10BA65;
   color: black;
 }
+.topnav a.home {
+  background-color: #ed1212;
+  color: white;
+}
+.topnav div a:hover {
+  background-color: #00AA55;
+}
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
   background-color: #ff9900;
