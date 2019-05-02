@@ -112,9 +112,9 @@
 }
     </style>
 </head>
-<body translate="no">
+<body onclick=move('next') ontouchstart=move('next') translate="no">
 <title></title>
-      <div onclick=move('next') ontouchstart=move('next') >
+     
 <section data-slideshow>
 <article data-slide data-theme=dark>
 <h1>What will the world be like in 2050?</h1>
@@ -151,16 +151,20 @@
 <li style="font-size: 30px"><a href="https://www.businessinsider.com/the-world-in-2050-2014-6">https://www.businessinsider.com/the-world-in-2050-2014-6</a></li>
 <li style="font-size: 30px"><a href="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F5%2F9%2F1%2F2%2F3152195-1-eng-GB%2F20161107_solar_panel_waste.jpg?source=nar-cms">https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F5%2F9%2F1%2F2%2F3152195-1-eng-GB%2F20161107_solar_panel_waste.jpg?source=nar-cms</a></li>
 </ol>
-      </article></div>
+    </article>
 <nav>
-<input type=button data-button=outline value=&lt; onclick=move('prev') ontouchstart=move('prev')>
+<input type=button data-button=outline value=&lt; onclick=back() ontouchstart=back()>
           <script src="https://albert-gonzalez.github.io/easytimer.js/dist/examples.min.js"> </script>
       <p data-button=outline id="basicUsage" onclick="document.location.reload()"></p>
-      <input type=button data-button=outline value=&gt; onclick=move('next') ontouchstart=move('next')>
+      <input type=button data-button=outline value=&gt; >
 
 </nav>
 </section>
 <script id="rendered-js">
+      function back() {
+           move('prev')
+            move('prev')
+            };
       var slideshow = document.querySelector('[data-slideshow]')
     slides = slideshow.querySelectorAll('[data-slide]')
 for (j=0;j<slides.length;j++){
