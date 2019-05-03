@@ -41,6 +41,7 @@ input {
 .topnav a.home {
   background-color: #ed1212;
   color: white;
+  padding: 20px 16px;
 }
 .topnav div a:hover {
   background-color: #00AA55;
