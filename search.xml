@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>Irom</ShortName>
+	<Description>A website with some things on it.</Description>
+	<Url type="application/rss+xml" template="https://www.irom.cf/search/?q={searchTerms}"/>
+</OpenSearchDescription>
