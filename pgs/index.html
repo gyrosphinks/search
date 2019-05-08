@@ -12,7 +12,8 @@
     </style>
 </head>
 <body translate="no">
-<title>Irom - PGS</title><section class="navigation">
+<title>Irom - PGS</title>
+<section class="navigation">
   <div class="nav-container">
     <div class="brand">
       <a class="home" href="//irom.cf"><img src="//irom.cf/favicon.ico"></img> IROM.cf</a>
@@ -26,7 +27,6 @@
       <li><a href="//irom.cf/photos">Photos</a></li>
       <li><a href="//irom.cf/books">Books</a></li>
       <li><a href="//irom.cf/weather">Weather</a></li>
-      <li><a onclick="bye()">Close</a></li>
       <li><a href="#">More</a>
         <ul class="nav-dropdown">
          <li>
@@ -39,9 +39,9 @@
           <a href="//irom.cf/edit">Github</a>
          </li>
          <li>
-          <a href="//irom.cf/pgs">PGS</a>
+          <a onclick='location.replace("https://www.irom.cf/pgs");'>PGS</a>
          </li>
-       </ul></li>&nbsp;&nbsp;<input onclick="window.location = 'https://www.irom.cf/search';" id="searchBox" type="text" placeholder="Search...">
+       </ul></li>&nbsp;&nbsp;<input onclick="window.location('https://www.irom.cf/search');" id="searchBox" type="text" placeholder="Search...">
      </ul>
      
    </nav> 
