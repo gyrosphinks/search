@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500');
 @charset "UTF-8";
-.footer {
+.footer !important{
   background-color: orange;
   text-align: center;
   color: white;
@@ -10,12 +10,12 @@
   width: 100%;
 }
 
-.footer a {
+.footer a !important{
   color: white;
 }
 
 /* Style the search box inside the navigation bar */
-.navigation input[type=text] {
+.navigation input[type=text] !important{
   float: right;
   padding: 6px;
   border: none;
@@ -28,7 +28,7 @@
   transition: width 0.4s ease-out-in;
 }
 
-.navigation a.home {
+.navigation a.home !important{
   display: block;
   padding: 0 20px;
   line-height: 70px;
@@ -37,11 +37,11 @@
   font-size: 25px;
 }
 
-.navigation a.home img {
+.navigation a.home img !important{
   height: 24px;
 }
 
-nav {
+nav !important{
   float: right;
 }
 nav ul {
@@ -49,11 +49,11 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul li {
+nav ul li !important{
   float: left;
   position: relative;
 }
-nav ul li a {
+nav ul li a !important{
   display: block;
   padding: 0 20px;
   line-height: 70px;
@@ -61,31 +61,31 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-nav ul li a:hover {
+nav ul li a:hover !important{
   background: #10BA65;
   color: #ffffff;
 }
-nav ul li a:not(:only-child):after {
+nav ul li a:not(:only-child):after !important{
   padding-left: 4px;
   content: " ▾";
 }
-nav ul li ul li {
+nav ul li ul li !important{
   min-width: 190px;
 }
-nav ul li ul li a {
+nav ul li ul li a !important{
   padding: 15px;
   line-height: 20px;
   z-index: 1;
 }
 
-.nav-dropdown {
+.nav-dropdown !important{
   position: absolute;
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-.nav-mobile {
+.nav-mobile !important{
   display: none;
   position: absolute;
   top: 0;
@@ -95,7 +95,7 @@ nav ul li ul li a {
   width: 70px;
 }
 
-#nav-toggle {
+#nav-toggle !important{
   position: absolute;
   left: 18px;
   top: 22px;
@@ -104,7 +104,7 @@ nav ul li ul li a {
 }
 #nav-toggle span,
 #nav-toggle span:before,
-#nav-toggle span:after {
+#nav-toggle span:after !important{
   cursor: pointer;
   border-radius: 1px;
   height: 5px;
@@ -115,26 +115,26 @@ nav ul li ul li a {
   content: "";
   transition: all 300ms ease-in-out;
 }
-#nav-toggle span:before {
+#nav-toggle span:before !important{
   top: -10px;
 }
-#nav-toggle span:after {
+#nav-toggle span:after !important{
   bottom: -10px;
 }
-#nav-toggle.active span {
+#nav-toggle.active span !important{
   background-color: transparent;
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after {
+#nav-toggle.active span:before, #nav-toggle.active span:after !important{
   top: 0;
 }
-#nav-toggle.active span:before {
+#nav-toggle.active span:before !important{
   transform: rotate(45deg);
 }
-#nav-toggle.active span:after {
+#nav-toggle.active span:after !important{
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) !important{
   .nav-mobile {
     display: block;
   }
@@ -161,12 +161,12 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) !important{
   .nav-list {
     display: block !important;
   }
 }
-.navigation {
+.navigation !important{
   height: 70px;
   background: #00AA55;
   position: fixed;
@@ -175,12 +175,12 @@ nav ul li ul li a {
   left: 0px;
 }
 
-.nav-container {
+.nav-container !important{
   max-width: 100%;
   margin: 0 auto;
 }
 
-.brand {
+.brand !important{
   position: absolute;
   padding-left: 20px;
   float: left;
@@ -189,7 +189,7 @@ nav ul li ul li a {
   font-size: 1.4em;
 }
 .brand a,
-.brand a:visited {
+.brand a:visited !important{
   color: #ffffff;
   text-decoration: none;
 }
@@ -200,7 +200,7 @@ body {
   font-size:1em;
   background-color: #00AA55;
 }
-input {
+input !important{
   border-radius: 5px;
 }
 #child {
