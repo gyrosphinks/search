@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500');
 @charset "UTF-8";
-.footer !important{
+.footer {
   background-color: orange;
   text-align: center;
   color: white;
@@ -10,12 +10,12 @@
   width: 100%;
 }
 
-.footer a !important{
+.footer a {
   color: white;
 }
 
 /* Style the search box inside the navigation bar */
-.navigation input[type=text] !important{
+.navigation input[type=text] {
   float: right;
   padding: 6px;
   border: none;
@@ -28,7 +28,7 @@
   transition: width 0.4s ease-out-in;
 }
 
-.navigation a.home !important{
+.navigation a.home {
   display: block;
   padding: 0 20px;
   line-height: 70px;
@@ -37,11 +37,11 @@
   font-size: 25px;
 }
 
-.navigation a.home img !important{
+.navigation a.home img {
   height: 24px;
 }
 
-nav !important{
+nav {
   float: right;
 }
 nav ul {
@@ -49,11 +49,11 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul li !important{
+nav ul li {
   float: left;
   position: relative;
 }
-nav ul li a !important{
+nav ul li a {
   display: block;
   padding: 0 20px;
   line-height: 70px;
@@ -61,31 +61,31 @@ nav ul li a !important{
   color: #ffffff;
   text-decoration: none;
 }
-nav ul li a:hover !important{
+nav ul li a:hover {
   background: #10BA65;
   color: #ffffff;
 }
-nav ul li a:not(:only-child):after !important{
+nav ul li a:not(:only-child):after {
   padding-left: 4px;
   content: " ▾";
 }
-nav ul li ul li !important{
+nav ul li ul li {
   min-width: 190px;
 }
-nav ul li ul li a !important{
+nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
   z-index: 1;
 }
 
-.nav-dropdown !important{
+.nav-dropdown {
   position: absolute;
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-.nav-mobile !important{
+.nav-mobile {
   display: none;
   position: absolute;
   top: 0;
@@ -95,7 +95,7 @@ nav ul li ul li a !important{
   width: 70px;
 }
 
-#nav-toggle !important{
+#nav-toggle {
   position: absolute;
   left: 18px;
   top: 22px;
@@ -104,7 +104,7 @@ nav ul li ul li a !important{
 }
 #nav-toggle span,
 #nav-toggle span:before,
-#nav-toggle span:after !important{
+#nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 5px;
@@ -115,26 +115,26 @@ nav ul li ul li a !important{
   content: "";
   transition: all 300ms ease-in-out;
 }
-#nav-toggle span:before !important{
+#nav-toggle span:before {
   top: -10px;
 }
-#nav-toggle span:after !important{
+#nav-toggle span:after {
   bottom: -10px;
 }
-#nav-toggle.active span !important{
+#nav-toggle.active span {
   background-color: transparent;
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after !important{
+#nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
 }
-#nav-toggle.active span:before !important{
+#nav-toggle.active span:before {
   transform: rotate(45deg);
 }
-#nav-toggle.active span:after !important{
+#nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 800px) !important{
+@media only screen and (max-width: 800px) {
   .nav-mobile {
     display: block;
   }
@@ -161,12 +161,12 @@ nav ul li ul li a !important{
     position: static;
   }
 }
-@media screen and (min-width: 800px) !important{
+@media screen and (min-width: 800px) {
   .nav-list {
     display: block !important;
   }
 }
-.navigation !important{
+.navigation {
   height: 70px;
   background: #00AA55;
   position: fixed;
@@ -175,12 +175,12 @@ nav ul li ul li a !important{
   left: 0px;
 }
 
-.nav-container !important{
+.nav-container {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.brand !important{
+.brand {
   position: absolute;
   padding-left: 20px;
   float: left;
@@ -189,7 +189,7 @@ nav ul li ul li a !important{
   font-size: 1.4em;
 }
 .brand a,
-.brand a:visited !important{
+.brand a:visited {
   color: #ffffff;
   text-decoration: none;
 }
@@ -200,8 +200,8 @@ body {
   font-size:1em;
   background-color: #00AA55;
 }
-input !important{
-  border-radius: 5px;
+input {
+  border-radius: 5px !important;
 }
 #child {
   line-height: 300px;
