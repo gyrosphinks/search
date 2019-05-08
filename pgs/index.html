@@ -12,18 +12,42 @@
     </style>
 </head>
 <body translate="no">
-<title>Irom - PGS</title>
-<div class="topnav">
-  <div><a></a></div>
-  <a class="home" href="https://www.irom.cf"><img src="//irom.cf/favicon.ico"></img> IROM.cf</a>
-  <div><a></a></div>
-<a class="active1" href="https://www.irom.cf/photos">Photos</a>
-<a class="active1" href="https://www.irom.cf/music">Music</a>
-<a class="active1" href="https://www.irom.cf/books">Books</a>
-<a class="active1" href="https://www.irom.cf/weather">Weather</a>
-<a class="active1" onclick="bye()">Close</a>
-<input onclick="window.location = 'https://www.irom.cf/search';" id="searchBox" type="text" placeholder="Search..."> <input placeholder="Enter a URL..." id="urlbox" type="text" onchange="preview(document.getElementById('urlbox').value);"></input>
-</div>
+<title>Irom - PGS</title><section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a class="home" href="//irom.cf"><img src="//irom.cf/favicon.ico"></img> IROM.cf</a>
+    </div>
+    <nav>
+     <div class="nav-mobile">
+      <a id="nav-toggle" href="#!"><span></span></a>
+     </div>
+     <ul class="nav-list">
+      <li><a href="//irom.cf/about">About</a></li>
+      <li><a href="//irom.cf/photos">Photos</a></li>
+      <li><a href="//irom.cf/books">Books</a></li>
+      <li><a href="//irom.cf/weather">Weather</a></li>
+      <li><a onclick="bye()">Close</a></li>
+      <li><a href="#">More</a>
+        <ul class="nav-dropdown">
+         <li>
+          <a href="//irom.cf/music">Music</a>
+         </li>
+         <li>
+          <a href="//irom.cf/search">All</a>
+         </li>
+         <li>
+          <a href="//irom.cf/edit">Github</a>
+         </li>
+         <li>
+          <a href="//irom.cf/pgs">PGS</a>
+         </li>
+       </ul></li>&nbsp;&nbsp;<input onclick="window.location = 'https://www.irom.cf/search';" id="searchBox" type="text" placeholder="Search...">
+     </ul>
+     
+   </nav> 
+  </div>
+</section>
+<div style="background-color: #00AA55;"><br><br><br><br></div>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'></link>
 <body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
