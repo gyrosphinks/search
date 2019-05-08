@@ -169,6 +169,10 @@ nav ul li ul li a {
 .navigation {
   height: 70px;
   background: #00AA55;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0px;
 }
 
 .nav-container {
