@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500');
 @charset "UTF-8";
+iframe {
+  border: none;
+}
 .footer {
   background-color: orange;
   text-align: center;
