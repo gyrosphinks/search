@@ -136,7 +136,7 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .nav-mobile {
     display: block;
   }
@@ -163,7 +163,7 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .nav-list {
     display: block !important;
   }
