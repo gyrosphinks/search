@@ -16,3 +16,26 @@
   $('nav ul').toggle();
  });
 })(jQuery);
+
+function bye() {
+location.replace("https://google.com");
+}
+
+
+      $(window).keydown(function(event) {
+  if(event.ctrlKey && event.keyCode == 84) { 
+    console.log("Hey! Ctrl+T event captured!");
+        bye()
+    event.preventDefault(); 
+  }
+  if(event.ctrlKey && event.keyCode == 83) { 
+    console.log("Hey! Ctrl+S event captured!");
+        bye()
+    event.preventDefault(); 
+  }
+            if(event.ctrlKey && event.keyCode == 2) { 
+    console.log("Hey! Ctrl+W event captured!");
+        bye()
+    event.preventDefault(); 
+  }
+});
