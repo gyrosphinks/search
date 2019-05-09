@@ -1,4 +1,6 @@
-
+.search {
+  background-color: #00AA55
+}
 
 /* this declares a better box model */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
