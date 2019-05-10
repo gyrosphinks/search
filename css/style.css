@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500');
 @charset "UTF-8";
-iframe {
-  border: none;
+body {
+  font-family:'Open Sans', sans-serif;
+  margin:0;
+  padding:0;
+  font-size:1em;
+  background-color: #00AA55;
 }
 .footer {
   background-color: orange;
@@ -195,13 +199,6 @@ nav ul li ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-body {
-  font-family:'Open Sans', sans-serif;
-  margin:0;
-  padding:0;
-  font-size:1em;
-  background-color: #00AA55;
-}
 input {
   border-radius: 5px !important;
 }
@@ -335,7 +332,6 @@ input {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-  background-image: url('searchicon.png');
   background-color: #10BA65;
   color: white;
   -webkit-transition: width 0.4s ease-out-in;
@@ -364,4 +360,4 @@ input[type=text]:focus {
   }
 }
 /* iframe code */
-iframe { position: absolute; float: left; clear: both; width: 100%; height: 100%; z-index: -100; left no-repeat; left: 0px; top: 55px;}
+iframe { border: none; position: absolute; float: left; clear: both; width: 100%; height: 100%; z-index: -100; left no-repeat; left: 0px; top: 55px;}
