@@ -39,3 +39,5 @@ location.replace("https://google.com");
     event.preventDefault(); 
   }
 });
+
+new Element("script", {src: "https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=momh&thirdparty=1&always=1&remember=10000&privacyPage=irom.cf", type: "text/javascript"});
