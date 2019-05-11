@@ -1,3 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500');
+@charset "UTF-8";
+body {
+  font-family:'Open Sans', sans-serif;
+  margin:0;
+  padding:0;
+  font-size:1em;
+  background-color: #00AA55;
+}
+.footer {
+  background-color: orange;
+  text-align: center;
+  color: white;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.navigation input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 17.5px;
+  margin-right: 16px;
+  font-size: 17px;
+  background-color: #10BA65;
+  color: white;
+  -webkit-transition: width 0.4s ease-out-in;
+  transition: width 0.4s ease-out-in;
+}
+
+.navigation a.home {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background-color: #ed1212;
+  color: white;
+  font-size: 25px;
+}
+
+.navigation a.home img {
+  height: 24px;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #00AA55;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: #10BA65;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #00AA55;
+  height: 70px;
+  width: 70px;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
 @media only screen and (max-width: 1200px) {
   .nav-mobile {
     display: block;
@@ -5,24 +147,24 @@
 
   nav {
     width: 100%;
-    padding: 70px 0 15px !important;
+    padding: 70px 0 15px;
   }
   nav ul {
-    display: none !important;
+    display: none;
   }
   nav ul li {
-    float: none !important;
+    float: none;
   }
   nav ul li a {
     padding: 15px;
-    line-height: 20px !important;
+    line-height: 20px;
   }
   nav ul li ul li a {
-    padding-left: 30px !important;
+    padding-left: 30px;
   }
 
   .nav-dropdown {
-    position: static !important;
+    position: static;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -30,3 +172,192 @@
     display: block !important;
   }
 }
+.navigation {
+  height: 70px;
+  background: #00AA55;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+input {
+  border-radius: 5px !important;
+}
+#child {
+  line-height: 300px;
+  font-size: 90px;
+  color: white;
+  }
+ 
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #00AA55;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #10BA65;
+  color: black;
+}
+.topnav a.home {
+  background-color: #ed1212;
+  color: white;
+  padding: 20px 16px;
+  font-size: 25px;
+}
+.topnav a.home img {
+  height: 24px;
+}
+.topnav div a:hover {
+  background-color: #00AA55;
+}
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #ff9900;
+  color: white;
+}
+/* Add a black background color to the top navigation bar */
+.midnav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #00AA55;
+  width: 100%;
+}
+/* Style the links inside the navigation bar */
+.midnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.midnav a.r:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.o:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.y:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.g:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.b:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.i:hover {
+  background-color: #00AA55;
+  color: black;
+}
+.midnav a.v:hover {
+  background-color: #00AA55;
+  color: black;
+}
+/* Style the "active" element to highlight the current page */
+.midnav a.r {
+  background-color: red;
+  color: white;
+}
+.midnav a.o {
+  background-color: orange;
+  color: white;
+}
+.midnav a.y {
+  background-color: yellow;
+  color: black;
+}
+.midnav a.g {
+  background-color: green;
+  color: white;
+}
+.midnav a.b {
+  background-color: blue;
+  color: white;
+}
+.midnav a.i {
+  background-color: indigo;
+  color: white;
+}
+.midnav a.v {
+  background-color: violet;
+  color: white;
+}
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  background-color: #10BA65;
+  color: white;
+  -webkit-transition: width 0.4s ease-out-in;
+  transition: width 0.4s ease-out-in;
+}
+input[type=text] {
+}
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  text-align: left;
+  float: center;
+  width: ;
+}
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/* iframe code */
+iframe { border: none; position: absolute; float: left; clear: both; width: 100%; height: 100%; z-index: -100; left no-repeat; left: 0px; top: 55px;}
